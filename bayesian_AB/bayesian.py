@@ -21,7 +21,7 @@ class Bandit:
         return np.random.beta(self.a, self.b)
 
     def update(self, x):
-        self.a += 1
+        self.a += x
         self.b += 1 - x
         self.N += 1
 
